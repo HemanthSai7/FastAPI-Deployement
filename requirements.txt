@@ -1,0 +1,7 @@
+fastapi==0.99.1
+uvicorn
+requests
+pydantic==1.10.12
+langchain
+clarifai
+Pillow
