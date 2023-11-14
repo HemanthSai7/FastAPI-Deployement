@@ -1,6 +1,6 @@
 FROM python:3.10.9
 
-COPY ./TextGen .
+COPY /TextGen .
 
 WORKDIR /
 
