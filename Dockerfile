@@ -1,9 +1,9 @@
 FROM python:3.10.9
 
-WORKDIR /code
+COPY . .
 
-COPY . /code/requirements.txt
+WORKDIR /
 
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /requirements.txt
 
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
